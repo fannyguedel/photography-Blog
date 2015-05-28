@@ -1,0 +1,62 @@
+body{
+background-image: url(../img/01.jpg);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.clear {
+	clear:both;
+	margin:0;
+	padding:0;
+	height:0;
+	width:0;
+}
+nav{
+
+text-align: center;
+}
+a{
+text-decoration: none;
+color: #fff;
+font-family: arial;
+word-spacing: 15px;
+font-size: 70px;
+}
+
+a:hover{
+color: #000
+}
+.position{
+text-align: center;
+width: 100%;
+margin-top:300px;
+position:relative;
+vertical-align:middle;
+}
+h1{
+font-family: arial; 
+font-size: 100px;
+color: black;
+margin:0 auto;
+}
+.pfeile {
+width: 200px;
+position:absolute;
+top:-40px;
+left:0;
+}
+
+.center {
+position:relative;
+width:60%;
+margin:0 auto;
+margin-top:100px;
+padding:0;
+}
+#rechts{
+position:absolute;
+left:calc(100% - 200px);
+}
+
+

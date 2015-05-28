@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>photography</title>
+  </head>
+  <body>
+	<nav>
+		<a href="index.html">Home </a> 
+		<a href="index2.html">Blog</a>
+		
+	</nav> 
+	<div class="position">
+		<img src= "img/pfeil2.png" class="pfeile" id="links">
+		<div class="center">
+			<h1> photography </h1>
+		</div>
+		<img src= "img/pfeil.png" class="pfeile" id="rechts">
+	</div>
+	
+	
+	
+	
+	
+	<script type="text/javascript">
+	
+	var body = document.querySelector('body');
+	var index = 1;
+	
+	var pfeillinks = document.querySelector("#links");
+	pfeillinks.addEventListener("click", bildlinks);
+	
+	var pfeilrechts = document.querySelector("#rechts");
+	pfeilrechts.addEventListener("click", bildrechts);
+	
+	function bildrechts() {
+		index = index + 1;
+		if(index == 6) {
+		index = 1;
+		}
+		body.style.backgroundImage = "url(img/0"+index+".jpg)";
+	
+	}
+	
+	function bildlinks() {
+		index = index - 1;
+		if(index == 0) {
+		index = 5;
+		}
+		body.style.backgroundImage = "url(img/0"+index+".jpg)";
+	}
+	</script>
+  </body>
+</html>
